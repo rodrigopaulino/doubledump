@@ -1,0 +1,25 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.xerial:sqlite-jdbc:3.46.0.0'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.18.0'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.18.0'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.18.0'
+    implementation 'org.slf4j:slf4j-simple:2.0.12'
+}
+
+application {
+    mainClass = 'com.doubledump.cli.DoubleDumpApp'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
