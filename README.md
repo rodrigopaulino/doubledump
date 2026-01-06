@@ -1,6 +1,6 @@
 # DoubleDump (dx2)
 
-DoubleDump (CLI command: `dx2`) is the Java translation of the original `mediadup-full.sh` media deduper. The CLI mirrors the bash script commands:
+DoubleDump (CLI command: `dx2`) is the Java translation of the original [MediaDup](https://github.com/rodrigopaulino/MediaDup) media deduper. The CLI mirrors the bash script commands:
 
 ```
 ./gradlew run --args="find-duplicates /path [--cache-db PATH] [--jobs N] [--action print|hardlink|symlink|move|none] [--trash-dir PATH]"
